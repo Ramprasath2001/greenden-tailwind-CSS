@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 2 Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+      background: #d9f0ff;
+    }
+
+    header {
+      grid-area: header;
+      background: #008b8b;
+      padding: 20px;
+    }
+
+    aside {
+      grid-area: aside;
+      background: #3cb371;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    main {
+      grid-area: main;
+      background: #da8f00;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer {
+      grid-area: footer;
+      background: #008b8b;
+      padding: 20px;
+    }
+
+    article {
+      width: 100%;
+    }
+
+    .article-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .image {
+      background: #e8c400;
+      flex: 1;
+      padding: 30px 0;
+      color: white;
+      min-width: 80px;
+      height: 200px;
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <aside>Aside</aside>
+    <main>
+      <article>
+        <div class="article-title">Article</div>
+        <div class="images">
+          <div class="image">Image</div>
+          <div class="image">Image</div>
+          <div class="image">Image</div>
+        </div>
+      </article>
+    </main>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden products</title>
+
+    <!--Tailwind cdn link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body>
+
+  <!--Responsive navbar-->
+  <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <h1 class="text-2xl">Greenden</h1>
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" w-4 h-4 viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="h-6 w-6 md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+
+    <ul class="flex gap-5 text-gray-600 hidden md:flex">
+        <li>
+            <a href="index.html" class="hover:underline  hover:text-black" href="#">Home</a>
+        </li>
+        <li>
+            <a href="products.html" class="hover:underline  hover:text-black" href="#">Products</a>
+        </li>
+        <li>
+            <a href="contact.html" class="hover:underline hover:text-black" href="#">Contact</a>
+        </li>
+    </ul>
+
+
+</nav>
+  <!-- Products Section -->
+  <section class="p-6">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-4">Our Products</h2>
+    <div class="flex justify-center mb-6">
+      <input type="text" placeholder="Search for a Product..." class="border border-gray-400 rounded-md px-4 py-2 w-1/2" />
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Product Cards -->
+      <div class="text-center">
+        <img src="./images/bestseller_1.png" alt="Rose Plant" class="mx-auto mb-2 inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1 class="font-semibold">Rose Plant</h1>
+        <p>$24</p>
+      </div>
+
+      <div class="text-center">
+        <img src="./images/bestseller_2.jpg" alt="Lily Plant" class="mx-auto mb-2 inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1 class="font-semibold">Snake Plant</h1>
+        <p>$39</p>
+      </div>
+
+      <div class="text-center">
+        <img src="./images/bestseller_3.png" alt="Hibiscus Rose" class="mx-auto mb-2 inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1 class="font-semibold">Spider plant</h1>
+        <p>$29</p>
+      </div>
+
+      <div class="text-center">
+        <img src="./images/bestseller_4.png" alt="New pet plant" class="mx-auto mb-2 inline hover:shadow-xl transform hover:-translate-y-2">
+        <h3 class="font-semibold">Cactus plant</h3>
+        <p>$19</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer section2-->
+  <section class="bg-green-100 p-10 flex flex-col gap-5 text-center mt-10">
+    <h1 class="text-4xl font-bold">Greenden</h1>
+    <p>Greenden brings nature to your doorstep with quality plants, fast delivery, and heartfelt service</p>
+    <p>&copy; 2025 Greenden.com. All rights reserved.</p>
+
+</section>
+
+
+</body>
+</html>
