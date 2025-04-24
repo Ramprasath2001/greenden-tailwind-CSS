@@ -15,12 +15,12 @@
   <!--Responsive navbar-->
   <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
     <h1 class="text-2xl">Greenden</h1>
-
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" w-4 h-4 viewBox="0 0 24 24" stroke-width="1.5"
+    <div class="md:hidden">
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" w-4 h-4 viewBox="0 0 24 24" stroke-width="1.5"
         stroke="currentColor" class="h-6 w-6 md:hidden">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
-
+  </div>
 
     <ul class="flex gap-5 text-gray-600 hidden md:flex">
         <li>
@@ -33,17 +33,39 @@
             <a href="contact.html" class="hover:underline hover:text-black" href="#">Contact</a>
         </li>
     </ul>
-
+  </div>
 
 </nav>
+
+<!--Side navbar-->
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width:50%; height:100vh;right: -50%;">
+
+  <div class="text-right p-5">
+      <p id="closenav" class="inline cursor-pointer">X</p>
+  </div>
+  
+  <ul class="flex flex-col gap-10 items-center text-gray-600">
+      <li>
+          <a href="index.html" class="hover:underline  hover:text-black" href="#">Home</a>
+      </li>
+      <li>
+          <a href="products.html" class="hover:underline  hover:text-black" href="#">Products</a>
+      </li>
+      <li>
+          <a href="contact.html" class="hover:underline hover:text-black" href="#">Contact</a>
+      </li>
+  </ul>
+
+</section>
+
   <!-- Products Section -->
   <section class="p-6">
     <h2 class="text-3xl font-bold text-center text-green-800 mb-4">Our Products</h2>
     <div class="flex justify-center mb-6">
-      <input type="text" placeholder="Search for a Product..." class="border border-gray-400 rounded-md px-4 py-2 w-1/2" />
+      <input id="search"  type="text" placeholder="Search for a Product..." class="border border-gray-400 rounded-md px-4 py-2 w-1/2" />
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       <!-- Product Cards -->
       <div class="text-center">
         <img src="./images/bestseller_1.png" alt="Rose Plant" class="mx-auto mb-2 inline hover:shadow-xl transform hover:-translate-y-2">
@@ -92,7 +114,7 @@
         <h1 class="font-semibold">Snake Plant</h1>
         <p>$39</p>
       </div>
-      
+
     </div>
 
   </section>
@@ -106,6 +128,8 @@
 
 </section>
 
+<script src="product.js">
 
+</script>
 </body>
 </html>
